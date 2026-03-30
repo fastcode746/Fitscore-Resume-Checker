@@ -10,7 +10,7 @@
 
 ## 📸 Preview
 
-> _Add a screenshot here after deployment — drag a screenshot into the GitHub editor_
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d2ad73d5-9e74-4320-b65c-b2377ed6a8a8" />
 
 ---
 
