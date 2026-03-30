@@ -79,23 +79,24 @@ const Header = React.memo(function Header() {
             href={href}
             target={href.startsWith('mailto') ? undefined : '_blank'}
             rel={href.startsWith('mailto') ? undefined : 'noopener noreferrer'}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium transition-opacity hover:opacity-85"
+            aria-label={label}
+            className="flex items-center gap-1.5 px-2.5 py-1.5 sm:px-3 rounded-full text-xs font-medium transition-opacity hover:opacity-85"
             style={style}
           >
             {icon}
-            {label}
+            <span className="hidden sm:inline">{label}</span>
           </a>
         ))}
 
         <div
-          className="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium"
+          className="flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium"
           style={{ backgroundColor: '#EDE9FE', color: '#6D28D9' }}
         >
           <svg aria-hidden="true" width="12" height="12" viewBox="0 0 12 12" fill="none">
             <circle cx="6" cy="6" r="5" stroke="#6D28D9" strokeWidth="1.5" />
             <path d="M6 3v3l2 1" stroke="#6D28D9" strokeWidth="1.5" strokeLinecap="round" />
           </svg>
-          Powered by Claude AI
+          <span className="hidden sm:inline">Powered by Claude AI</span>
         </div>
       </div>
     </header>
