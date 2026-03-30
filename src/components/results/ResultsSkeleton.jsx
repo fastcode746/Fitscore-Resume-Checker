@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 function SkeletonBlock({ className, style }) {
   return (
@@ -10,8 +10,20 @@ function SkeletonBlock({ className, style }) {
 }
 
 const ResultsSkeleton = React.memo(function ResultsSkeleton() {
+  const [showHint, setShowHint] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowHint(true), 8000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="space-y-6" aria-label="Loading analysis results" aria-busy="true">
+      {showHint && (
+        <p className="text-xs text-center" style={{ color: '#6B7280' }}>
+          Complex resumes can take up to 60 seconds — almost there...
+        </p>
+      )}
       {/* Score circle placeholder */}
       <div className="flex flex-col items-center gap-3 py-4">
         <SkeletonBlock style={{ width: 140, height: 140, borderRadius: '50%' }} />
