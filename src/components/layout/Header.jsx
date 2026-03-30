@@ -1,5 +1,5 @@
 import React from 'react';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 const PATREON_URL = import.meta.env.VITE_PATREON_URL;
 const LINKEDIN_URL = import.meta.env.VITE_LINKEDIN_URL;
