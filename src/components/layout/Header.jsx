@@ -1,8 +1,10 @@
 import React from 'react';
+import { Analytics } from "@vercel/analytics/next"
 
 const PATREON_URL = import.meta.env.VITE_PATREON_URL;
 const LINKEDIN_URL = import.meta.env.VITE_LINKEDIN_URL;
 const EMAIL = import.meta.env.VITE_EMAIL;
+
 
 const socialButtons = [
   {
@@ -47,6 +49,7 @@ const Header = React.memo(function Header() {
       className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 bg-white"
       style={{ height: '56px', borderBottom: '1px solid #E5E7EB' }}
     >
+    <Analytics />
       <div className="flex items-center gap-2">
         <svg
           aria-hidden="true"
@@ -96,6 +99,7 @@ const Header = React.memo(function Header() {
         </div>
       </div>
     </header>
+    
   );
 });
 

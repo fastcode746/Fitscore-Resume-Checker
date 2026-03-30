@@ -2,7 +2,15 @@
   "permissions": {
     "allow": [
       "Bash(npm install:*)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(vercel --version)",
+      "Bash(vercel whoami:*)",
+      "Bash(vercel env:*)",
+      "Bash(printf '%s' \"/api/analyse\")",
+      "Bash(printf '%s' \"https://www.patreon.com/c/ZarghamAbbas\")",
+      "Bash(printf '%s' \"https://www.linkedin.com/in/zargham-abbas-dev/\")",
+      "Bash(printf '%s' \"czaaaa20@gmail.com\")",
+      "Bash(vercel --prod)"
     ]
   }
 }
