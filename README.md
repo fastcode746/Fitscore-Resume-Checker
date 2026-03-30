@@ -2,7 +2,6 @@
 
 > Paste any job description. Upload your resume. Get your match score, missing keywords, section ratings, and AI-rewritten bullet points — in 10 seconds.
 
-<img width="1920" height="1080" alt="Screenshot from 2026-03-30 00-55-49" src="https://github.com/user-attachments/assets/193e4093-1c64-42b0-a638-816d0694e3fb" />
 <img width="1920" height="1080" alt="Screenshot from 2026-03-30 16-43-05" src="https://github.com/user-attachments/assets/4ed6c297-ba9b-499d-a204-80746d78a495" />
 
 
